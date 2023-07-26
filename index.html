@@ -36,33 +36,38 @@
 
   <nav>
     <div class="container">
-      <div class="navbar pt">ABOUT ME</div>
-      <div class="navbar">WEB DESIGN PROJECTS</div>
-      <div class="navbar">CERTIFICATIONS &AMP; AWARDS</div>
-      <div class="navbar">SKILLS &AMP; EXPERIENCE</div>
-      <div class="navbar pt">CONTACT</div>
+      <div class="navbar pt"><a href="#aboutme">ABOUT ME</a></div>
+      <div class="navbar"><a href="#projects">WEB DESIGN PROJECTS</a></div>
+      <div class="navbar"><a href="#certs">CERTIFICATIONS &AMP; AWARDS</a></div>
+      <div class="navbar"><a href="#skills"> SKILLS &AMP; EXPERIENCE</a></div>
+      <div class="navbar pt"><a href="#contact">CONTACT</a></div>
     </div>
   </nav>
 
   <div class="container">
     <div class="cards">
+      <a name="aboutme"></a>
       <div class="card-icon"><i class="fa-solid fa-quote-left"></i></div>
-      <div class="card-title">ABOUT ME</div>
+      <div class="card-title" name="aboutme">ABOUT ME</div>
       <div class="card-info">I have loved graphic design ever since I was young and first discovered computer design
-        software such as CorelDraw, Adobe Illustrator and Photoshop, QuarkExpress, InDesign,and more.
+        software such as CorelDraw, QuarkExpress, InDesign, Adobe Illustrator and Photoshop.
         I enjoy arranging things on a page and playing with spacing.
-
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="cards">
+      <a name="projects"></a>
       <div class="card-icon"><i class="fa-solid fa-folder-open"></i></div>
       <div class="card-title">WEB DESIGN PROJECTS</div>
       <div class="card-info">
 
         <table class="card-list">
+          <th>
+          <td></td>
+          <td></td>
+          </th>
           <tr>
             <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
             <td class="list-title"><a href="visit_seoul/index.html" target="_blank">VISIT SEOUL</a></td>
@@ -88,32 +93,110 @@
 
   <div class="container">
     <div class="cards">
+      <a name="certs"></a>
       <div class="card-icon"><i class="fa-solid fa-medal"></i></div>
-      <div class="card-title">CERTIFICATION &AMP; AWARDS</div>
-      <div class="card-info"></div>
-
-      <table class="card-list">
-        <tr>
-          <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
-          <td class="list-title"><a href="projects/visit-seoul/index.html" target="_blank">VISIT SEOUL</a></td>
-        </tr>
-      </table>
+      <div class="card-title" name="certs">CERTIFICATION &AMP; AWARDS</div>
+      <div class="card-info">
+        <table class="card-list">
+          <th>
+          <td></td>
+          <td></td>
+          </th>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>ASSOCIATE DEGREE DRAFTING &AMP; DESIGN</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>AUTODESK REVIT CERTIFIED USER</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>AUTODESK INVENTOR CERTIFIED USER</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>AUTODESK AUTOCAD CERTIFIED USER</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>AWS CLOUD PRACTITIONER CERTIFICATE</p>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 
   <div class="container">
     <div class="cards">
+      <a name="skills"></a>
       <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
-      <div class="card-title">SKILLS &AMP; EXPERIENCE</div>
-      <div class="card-info">jsfdjsjsflkdjdfk</div>
+      <div class="card-title" name="skills">SKILLS &AMP; EXPERIENCE</div>
+      <div class="card-info">
+
+        <table class="card-list">
+          <th>
+          <td></td>
+          <td></td>
+          </th>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>GRAPHIC DESIGN</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>CAD DRAFTING &lpar;STRUCTURAL, ARCHITECTURAL, CIVIL, &AMP; MECHANICAL&rpar;</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>WEB DESIGN</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="list-icon"><i class="fa-solid fa-angles-right"></i></td>
+            <td class="list-title">
+              <p>LARGE-FORMAT PRINTING</p>
+            </td>
+          </tr>
+        </table>
+
+      </div>
     </div>
   </div>
 
   <div class="container">
     <div class="cards">
+      <a name="contact"></a>
       <div class="card-icon"><i class="fa-solid fa-reply-all"></i></div>
-      <div class="card-title">CONTACT</div>
-      <div class="card-info">jsfdjsjsflkdjdfk</div>
+      <div class="card-title" name="contact">CONTACT</div>
+      <div class="card-info">
+        
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email">
+          <input type="submit" value="Submit">
+        </form>
+
+
+
+      </div>
     </div>
   </div>
 
