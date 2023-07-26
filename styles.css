@@ -1,3 +1,185 @@
 /*  */
 /*  */
 /* Project: Online Profile */
+
+
+body {
+    background-color: #d9d9d9;
+}
+
+
+.container {
+    max-width: 90%;
+    background-color: white;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* top area */
+
+.photo {
+    height: 150px;
+}
+
+.photo img {
+    height: 100%;
+}
+
+.name {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 34px;
+    padding-left: 0px;
+    padding-top: 50px;
+}
+
+.name1 {
+    font-weight: 600;
+}
+
+.name2 {
+    font-weight: 400;
+}
+
+.name3 {
+    font-weight: 200;
+}
+
+
+/* navigation */
+
+
+nav {}
+
+.navbar {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    padding: 15px 0px 10px 0px;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    flex: 1 1 100%;
+}
+
+
+/* cards */
+
+
+.cards {
+    width: 300px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    padding: 20px;
+    flex: 1 1 100%;
+}
+
+.card-icon {
+    font-size: 100px;
+
+}
+
+.card-title {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 60px;
+}
+
+.card-info {
+    font-weight: 300;
+    font-size: 21px;
+    padding: 0px 40px;
+    line-height: 40px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+td {
+    border-bottom: 1px solid rgb(172, 172, 172);
+    margin: 0px;
+}
+
+tr:hover {
+    background-color: rgb(54, 141, 234);
+}
+
+tr:hover a {
+    color: white;
+    font-weight: 600;
+}
+
+.list-icon {
+text-align: right;
+padding-right: 15px;
+}
+
+.list-title {
+    text-align: left;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+
+
+/* responsive */
+
+@media screen and (min-width: 500px) {
+
+    .photo {
+        height: 200px;
+    }
+
+    .name {
+        font-size: 40px;
+        padding-left: 30px;
+        padding-top: 80px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .photo {
+        height: 250px;
+    }
+
+    .name {
+        font-size: 48px;
+        padding-left: 30px;
+        padding-top: 110px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 60%;
+    }
+
+
+    .navbar {
+        text-align: center;
+        padding: 20px;
+        flex: 1 1 100px;
+        align-content: center;
+        line-height: 28px;
+
+    }
+
+    .pt {
+        margin-top: 10px;
+    }
+
+}
