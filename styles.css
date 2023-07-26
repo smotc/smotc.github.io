@@ -1,6 +1,6 @@
-/*  */
-/*  */
-/* Project: Online Profile */
+/* Project: CIS-130 Final Project */
+/* Name: Shannon McKaig Buffington */
+/* Date: July 26, 2023 */
 
 
 body {
@@ -112,7 +112,7 @@ table {
     border-collapse: collapse;
 }
 
-td, th {
+td {
     border-bottom: 1px solid rgb(172, 172, 172);
     margin: 0px;
 }
@@ -148,7 +148,11 @@ a,
     line-height: 1.4em;
 }
 
-
+form {
+    display: flex;
+    flex-wrap: wrap;
+flex-direction: row;
+}
 
 
 
@@ -189,7 +193,7 @@ a,
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
 
     .container,
     header {
