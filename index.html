@@ -32,8 +32,6 @@
     </div>
   </header>
 
-
-
   <nav>
     <div class="container">
       <div class="navbar pt"><a href="#aboutme">ABOUT ME</a></div>
@@ -46,9 +44,9 @@
 
   <div class="container">
     <div class="cards">
-      <a name="aboutme"></a>
+      <a id="aboutme"></a>
       <div class="card-icon"><i class="fa-solid fa-quote-left"></i></div>
-      <div class="card-title" name="aboutme">ABOUT ME</div>
+      <div class="card-title">ABOUT ME</div>
       <div class="card-info">I have loved graphic design ever since I was young and first discovered computer design
         software such as CorelDraw, QuarkExpress, InDesign, Adobe Illustrator and Photoshop.
         I enjoy arranging things on a page and playing with spacing.
@@ -58,7 +56,7 @@
 
   <div class="container">
     <div class="cards">
-      <a name="projects"></a>
+      <a id="projects"></a>
       <div class="card-icon"><i class="fa-solid fa-folder-open"></i></div>
       <div class="card-title">WEB DESIGN PROJECTS</div>
       <div class="card-info">
@@ -93,9 +91,9 @@
 
   <div class="container">
     <div class="cards">
-      <a name="certs"></a>
+      <a id="certs"></a>
       <div class="card-icon"><i class="fa-solid fa-medal"></i></div>
-      <div class="card-title" name="certs">CERTIFICATION &AMP; AWARDS</div>
+      <div class="card-title">CERTIFICATION &AMP; AWARDS</div>
       <div class="card-info">
         <table class="card-list">
           <tr>
@@ -139,9 +137,9 @@
 
   <div class="container">
     <div class="cards">
-      <a name="skills"></a>
+      <a id="skills"></a>
       <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
-      <div class="card-title" name="skills">SKILLS &AMP; EXPERIENCE</div>
+      <div class="card-title">SKILLS &AMP; EXPERIENCE</div>
       <div class="card-info">
 
         <table class="card-list">
@@ -181,24 +179,39 @@
 
   <div class="container">
     <div class="cards">
-      <a name="contact"></a>
+      <a id="contact"></a>
       <div class="card-icon"><i class="fa-solid fa-reply-all"></i></div>
-      <div class="card-title" name="contact">CONTACT</div>
-      <div class="card-info">
+      <div class="card-title">CONTACT</div>
+      <div class="card-info">Fill out the form below to contact me.
+      </div>
 
-        <form>
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name"><br>
-          <label for="email">Email:</label><br>
-          <input type="text" id="email" name="email">
-          <input type="submit" value="Submit">
-        </form>
+      <div class="cont-cols">
+        <section id="form-control">
+          <div id="cont-form">
+            <form method="get" action="thankyou.html">
 
+              <fieldset>
+                <label for="name">
+                  Name:
+                  <input autofocus type="text" name="name" id="name" required style="margin-left: 10px">
+                </label>
 
+                <label for="e-mail">
+                  Email:
+                  <input type="text" name="e-mail" id="e-mail" required style="margin-left: 10px">
+                </label>
 
+                <textarea name="info" id="info" cols="30" rows="5" placeholder="I have a question..."></textarea>
+
+                <input class="submit" type="submit" value="SUBMIT">
+              </fieldset>
+            </form>
+          </div>
+        </section>
       </div>
     </div>
   </div>
+
 
 
 </body>

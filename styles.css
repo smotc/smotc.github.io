@@ -5,6 +5,9 @@
 
 body {
     background-color: #d9d9d9;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
 }
 
 
@@ -15,6 +18,8 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 
 /* top area */
@@ -35,7 +40,6 @@ header {
 
 .name {
     background-color: white;
-
     font-family: 'League Spartan', sans-serif;
     font-size: 34px;
     padding-left: 0px;
@@ -55,6 +59,9 @@ header {
 }
 
 
+
+
+
 /* navigation */
 
 
@@ -71,6 +78,9 @@ nav {
     border-bottom: 1px solid rgb(172, 172, 172);
     flex: 1 1 100%;
 }
+
+
+
 
 
 /* cards */
@@ -97,7 +107,7 @@ nav {
     font-weight: 300;
     font-size: 28px;
     line-height: 60px;
-    padding-bottom: 40px;
+    padding: 20px 0px 20px 0px;
 }
 
 .card-info {
@@ -117,12 +127,14 @@ td {
     margin: 0px;
 }
 
-tr:hover {
+tr:hover,
+.navbar:hover {
     background-color: rgb(54, 141, 234);
 }
 
 tr:hover a,
-tr:hover p {
+tr:hover p,
+.navbar:hover a {
     color: white;
     font-weight: 600;
 }
@@ -148,10 +160,79 @@ a,
     line-height: 1.4em;
 }
 
+
+
+
+/* form */
+
 form {
     display: flex;
     flex-wrap: wrap;
-flex-direction: row;
+    flex-direction: row;
+}
+
+.cont-cols,
+.cont-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+form {
+    justify-content: center;
+}
+
+#form-control {
+    background-color: rgb(255, 255, 255);
+    flex: 1 600px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 50%;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+label,
+select,
+input {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 5px;
+}
+
+input {
+    line-height: 1.4em;
+    width: 50%;
+}
+
+textarea {
+    margin: 30px 0px;
+}
+
+.submit {
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-weight: 400;
+    background-color: rgb(54, 141, 234);
+    font-size: 21px;
+    border-radius: 2px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: white;
+    color: rgb(54, 141, 234);
+    font-weight: 600;
+    border: 2px solid rgb(54, 141, 234);
 }
 
 
@@ -184,11 +265,19 @@ flex-direction: row;
         padding-top: 115px;
     }
 
+
+    .card-title {
+        font-size: 34px;
+        padding: 40px 0px;
+    }
+
     .list-title p {
         padding: 0px;
         margin: 0px;
-        line-height: 2em;
+        /* line-height: 2em; */
     }
+
+
 
 }
 
@@ -207,11 +296,10 @@ flex-direction: row;
         flex: 1 1 100px;
         align-content: center;
         line-height: 28px;
-
     }
 
     .pt {
-        margin-top: 10px;
+        padding-top: 35px;
     }
 
 }
